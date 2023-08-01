@@ -26,10 +26,45 @@
             text-align: center;
             font-size: small;
         }
-        .centered{
+
+        .centered {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .form-control,
+        .card {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-control {
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #main {
+            margin-top: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .form-control,
+            .card {
+                max-width: 90%;
+            }
+
+            .centered {
+                flex-direction: column;
+            }
+
+            #items {
+                padding-inline-start: 0;
+            }
         }
     </style>
 </head>
